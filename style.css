@@ -347,3 +347,105 @@ footer {
     text-align: center;
   }
 }
+
+/* ==== GLOBAL ENHANCEMENTS ==== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f9fafc;
+  color: #1f2937;
+  scroll-behavior: smooth;
+}
+
+header {
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #1e3a8a, #1e293b);
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.75rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+nav {
+  background: #0f172a;
+  text-align: center;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #3b82f6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* Universal fade-in for sections */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out 0.2s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Upgrade buttons */
+.btn, .btn-outline {
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #2563eb;
+}
+
+.btn-outline {
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+/* Footer upgrade */
+footer {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.95rem;
+}
